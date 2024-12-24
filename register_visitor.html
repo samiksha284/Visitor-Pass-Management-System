@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Visitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Visitor Registration</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="visitorForm">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="gate">Gate:</label>
+                <select id="gate" name="gate" required>
+                    <option value="Gate 1">Gate 1</option>
+                    <option value="Gate 2">Gate 2</option>
+                    <option value="Gate 3">Gate 3</option>
+                </select>
+
+                <label for="pre_registered">Pre-Register?</label>
+                <input type="checkbox" id="pre_registered" name="pre_registered">
+
+                <button type="submit" class="btn">Register Visitor</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Visitor Management System</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
